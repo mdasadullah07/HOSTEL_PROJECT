@@ -8,8 +8,8 @@ const studentSchema = new mongoose.Schema({
   },
   admissionNo: {
     type: String,
-    required: true,
     unique: true,
+    required: true, 
     trim: true,
   },
   contact: {
@@ -17,6 +17,7 @@ const studentSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+
   email: {
     type: String,
     trim: true,
@@ -25,13 +26,13 @@ const studentSchema = new mongoose.Schema({
   dob: {
     type: Date,
   },
-  class: {
+  className: {
     type: String,
-    required: true,
+    
   },
   section: {
     type: String,
-    required: true,
+   
   },
   fatherName: {
     type: String,
